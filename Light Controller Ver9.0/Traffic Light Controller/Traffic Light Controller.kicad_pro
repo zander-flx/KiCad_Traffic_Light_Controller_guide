@@ -534,9 +534,23 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.381,
-        "via_diameter": 0.889,
+        "via_diameter": 0.762,
         "via_drill": 0.381,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.254,
+        "diff_pair_gap": 0.254,
+        "diff_pair_width": 0.254,
+        "microvia_diameter": 0.635,
+        "microvia_drill": 0.381,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.508,
+        "via_diameter": 0.762,
+        "via_drill": 0.381
       }
     ],
     "meta": {
@@ -544,7 +558,16 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "/*V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/*GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
